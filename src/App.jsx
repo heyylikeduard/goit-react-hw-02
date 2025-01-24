@@ -3,7 +3,7 @@ import Description from "./components/Description/Description";
 import Feedback from "./components/Feedback/Feedback";
 import Options from "./components/Options/Options";
 import Notification from "./components/Notification/Notification";
-import "./App.module.css";
+import styles from "./App.module.css";
 
 const App = () => {
   const [feedback, setFeedback] = useState(() => {
@@ -35,7 +35,7 @@ const App = () => {
     : 0;
 
   return (
-    <div className="App">
+    <div className={styles.App}>
       <Description />
       <Options
         updateFeedback={updateFeedback}
